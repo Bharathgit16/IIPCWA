@@ -16,11 +16,6 @@ try{
 
 if(rs.next())
 {
-	String id=rs.getString("agentid");
-	session.setAttribute("name",name);
-	session.setAttribute("pswd",pswd);
-    session.setAttribute("aid",id);
-	response.sendRedirect("home.jsp");
 }
 else
 {
