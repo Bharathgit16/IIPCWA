@@ -13,9 +13,6 @@
 <%
 try{
 	
-String role=request.getParameter("role");
-
-ResultSet rs=st.executeQuery("select * from agent where username='"+name+"' and password='"+pswd+"'");
 
 if(rs.next())
 {
