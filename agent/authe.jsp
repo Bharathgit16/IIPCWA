@@ -13,6 +13,10 @@
 <%
 try{
 	
+Statement st=MyDriver.getConnection("READ");
+System.out.println("hi after result ");
+String name=request.getParameter("name");
+String pswd=request.getParameter("pswd");
 String role=request.getParameter("role");
 
 ResultSet rs=st.executeQuery("select * from agent where username='"+name+"' and password='"+pswd+"'");
